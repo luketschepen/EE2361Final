@@ -1,6 +1,6 @@
 /*
  * Date: 4/9/2024
- * Name(s): Cole Jaeger, Dhayalan Balasubarmanian, Luke Tschepen, Nickk
+ * Name(s): Cole Jaeger, Dhayalan Balasubarmanian, Luke Tschepen, Nicholas Kang
  * Project Name: Blood Oxygen Sensor
  * Program Description: This program initializes the Grove RGB/LCD display
  * to be compatible with the PIC24 using I2C communication. It contains various
@@ -20,37 +20,14 @@
 #include "spo2_alg.h"
 #include "button_switch.h"
 
-//#include "I2C1.h"
-
-//ARE WE USING THESE I2C functions IN HERE OR seperate file???
 void delay_ms(unsigned int ms){
     //uses c-ASM code to delay 1 millisecond
+    //ms: number of milliseconds to delay
     while(ms-- > 0){
         asm("repeat #15998");
         asm("nop");
     }
 }
-
-//void init_I2C1(void){
-//    I2C1BRG = 37; //set to a clock frequency of 400 kHz section 16.3 PIC24 D.S.
-//    IFS1bits.MI2C1IF = 0; //Clear Interrupt Flag
-//    I2C1CONbits.I2CEN = 1; //Enable I2C Mode
-//}
-//
-//void I2C_start() {
-//    I2C1CONbits.SEN = 1;   // Initiate start condition
-//    while (I2C1CONbits.SEN);
-//};
-//
-//void I2C_stop() {
-//    I2C1CONbits.PEN = 1;   // Initiate stop condition
-//    while (I2C1CONbits.PEN);
-//}
-//// Function to write data over I2C
-//void I2C_write(uint8_t data) {
-//    I2C1TRN = data;        //  I2C transimit reg
-//    while (I2C1STATbits.TRSTAT); // Wait for transmission to complete
-//}
 
 void rgb_cmd(char Package) {
     // I2C communication protocol betweem the PIC24 and Grove LCD
