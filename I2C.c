@@ -3,7 +3,7 @@
 
 void init_I2C1(void){
     I2C1BRG = 37; //set to a clock frequency of 400 kHz section 16.3 PIC24 D.S.
-    IFS1bits.MI2C1IF = 0; //Clear Interrupt Flag
+    IFS1bits.MI2C1IF = 0; //Clear Interrupt Flag 
     I2C1CONbits.I2CEN = 1; //Enable I2C Mode
 }
 
