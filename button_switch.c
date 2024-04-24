@@ -1,8 +1,15 @@
 /*
- * File:   button_switch.c
- * Author(s): Luke, Cole, Nick
- *
- * Created on April 20, 2024, 7:56 AM
+ * Date: 4/24/2024
+ * Name(s): Cole Jaeger, Dhayalan Balasubarmanian, Luke Tschepen, Nick
+ * Project Name: Blood Oxygen Sensor
+ * Program Description:provides functionality for interfacing with a 
+ * physical button switch in the Blood Oxygen Sensor project. 
+ * It includes functions for initializing the button, detecting button presses,
+ * and determining the state of the button. The button switch is connected
+ * to RB7 (Pin 6) of the microcontroller, and its usage involves capturing
+ * button press events and toggling the display of heart rate information
+ * References/Code Citations: Arduino Grove RGB file, JHD data sheet, Lab 4
+ * 
  */
 
 #include "xc.h"
