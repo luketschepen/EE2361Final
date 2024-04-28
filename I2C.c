@@ -1,5 +1,9 @@
 #include "I2C.h"
-
+/*
+This file contains all the I2C functions that we used for the different components of the project. 
+We used I2C1 for the LCD and I2C for the sensor. This file also includes the functions for reading and writing for the registers
+using I2C. 
+*/
 /*
 function that initializes the I2C parameters. 
 */
