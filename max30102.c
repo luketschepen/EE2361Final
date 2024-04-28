@@ -4,7 +4,12 @@
 #include "rgb_lcd_display.h"
 #include "spo2_alg.h"
 #include "button_switch.h"
-
+/*
+This file is the library for the MAX30102 sensor. This stores all the registers needed for 
+configuring and using the sensor and also the functions that use I2C protocol to configure the sensor correctly. 
+This file also has functions that read data from the buffer and use an Arduino algorithm to convert those readings into
+proper SPO2 and heart rate readings which are then put into a moving average for more accurate data. 
+*/
 volatile unsigned long int overflow = 0;
 
 static const uint8_t MAX30105_INTSTAT1 =		0x00;
