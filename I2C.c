@@ -7,7 +7,6 @@
  * we used for the different components of the project. 
  * We used I2C1 for the LCD and I2C for the sensor. 
  * This file also includes the functions for reading and writing for the registers using I2C. 
- * References/Code Citations: Arduino Grove RGB file, JHD data sheet, Lab 4
  * 
  */
 
