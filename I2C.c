@@ -1,9 +1,16 @@
 #include "I2C.h"
 /*
-This file contains all the I2C functions that we used for the different components of the project. 
-We used I2C1 for the LCD and I2C for the sensor. This file also includes the functions for reading and writing for the registers
-using I2C. 
-*/
+ * Date: 4/24/2024
+ * Name(s): Cole Jaeger, Dhayalan Balasubarmanian, Luke Tschepen, Nick
+ * Project Name: Blood Oxygen Sensor
+ * Program Description: contains all the I2C functions that 
+ * we used for the different components of the project. 
+ * We used I2C1 for the LCD and I2C for the sensor. 
+ * This file also includes the functions for reading and writing for the registers using I2C. 
+ * References/Code Citations: Arduino Grove RGB file, JHD data sheet, Lab 4
+ * 
+ */
+
 /*
 function that initializes the I2C parameters. 
 */
